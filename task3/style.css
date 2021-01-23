@@ -1,0 +1,68 @@
+.stepper {
+	display: flex;
+
+	flex-direction: row;
+	justify-content: center;
+}
+
+.stepper__step {
+	display: flex;
+	width: 310px;
+	height: 60px;
+
+	background: linear-gradient(180deg, #686868 0%, #B3B3B3 50.52%, #686868 100%);
+	-webkit-clip-path: polygon(97% 0%, 100% 50%, 97% 100%, 0% 100%, 3% 50%, 0% 0%);
+	clip-path: polygon(97% 0%, 100% 50%, 97% 100%, 0% 100%, 3% 50%, 0% 0%);
+
+	justify-content: center;
+	align-items: center;
+}
+
+.stepper__step:first-child {
+	-webkit-clip-path: polygon(97% 0%, 100% 50%, 97% 100%, 0% 100%, 0 50%, 0% 0%);
+	clip-path: polygon(97% 0%, 100% 50%, 97% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+
+.stepper__step:last-child {
+	width: 300px;
+
+	-webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 3% 50%, 0% 0%);
+	clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 3% 50%, 0% 0%);
+}
+
+.stepper__step--active {
+	background: linear-gradient(180deg, #2EA239 0%, #62FD71 50.52%, #2EA139 100%);
+}
+
+.stepper__text {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 26px;
+
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.stepper__text--active {
+	text-shadow: 
+		-0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
+}
+}

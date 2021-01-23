@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link type="text/css" href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="form">
+    <header class="form__header">Регистрация</header>
+    <hr class="form__hr">
+    <div class="form__container">
+        <label class="form__label" for="email">E-mail</label>
+        <input class="form__input" type="email" placeholder="example@site.domain" name="email" required>
+
+        <div class="form__group">
+            <div class="form__column">
+                <label class="form__label" for="psw">Пароль</label>
+                <input class="form__input" type="password" placeholder="password" name="psw" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+            </div>
+
+            <div class="form__column">
+                <label class="form__label" for="psw-repeat">Повторите пароль</label>
+                <input class="form__input" type="password" placeholder="password" name="psw-repeat" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+            </div>
+        </div>
+        <label class="form__label" for="name">ФИО</label>
+        <input class="form__input" type="text" placeholder="Игорев Игорь Игоревич" name="name" required>
+
+        <div class="form__column">
+            <label class="form__label" for="age">Возраст</label>
+            <input class="form__input" type="number" placeholder="18" min="14" max="110" name="age" required>
+        </div>
+    </div>
+    <hr class="form__hr">
+    <div class="form__buttons">
+        <button type="submit" class="form__button">Отправить</button>
+        <button type="reset" class="form__button form__button--cancell">Отмена</button>
+    </div>
+  </section>
+</body>
+</html>
